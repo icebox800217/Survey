@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 請定義問券名稱 -->
+    <title> 飲料喜好調查 </title>
+    <style>
+        div {
+            width: 650px;
+
+        }
+
+        form {
+            background-image: url("../外框.jpg");
+            width: 650px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="../手搖杯.jfif" alt="" width="650px" height="350px">
+    <div style="background-color: burlywood">
+        <h3> <span style="color: brown"> 手搖杯是台灣的一大特色，不僅口味眾多，還提供甜度跟冰量調整的服務~</span> </h3>
+        <em> <p>你喜歡喝手搖杯嗎?請依照您平常的喜好，幫我們完成以下的問卷!</p></em>
+    </div>
+    <!-- HTML5 新增了許多 <input> 的型態，請使用這些type，設計一份問卷 -->
+    <!-- http://www.w3schools.com/html/html_form_input_types.asp -->
+
+    <!-- 如果不知道該怎麼下手，請參考這個網站所設計的情境問卷找靈感 -->
+    <!-- https://technews.tw/2018/10/18/surveycake-situation-list/ -->
+
+    <!-- 底下是作業需要包含的項目 -->
+    <!-- 1. 問卷需包含 5-7 個問題 -->
+    <!-- 2. type 挑選時，請盡量不重複 -->
+    <!-- 3. 挑選 至少 1 個問題，設置 pattern 檢核 -->
+    <form action="">
+        <br>
+        <br>
+        <br>
+        <label for="userName">1.姓名：</label>
+        <input type="text" name="userName" id="userName"> <br> <br>
+
+        <label for="">2.性別：</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">female</label><br> <br>
+
+        <label for="">3.年齡：</label>
+        <input type="checkbox" name="age" id="10～20">
+        <label for="10～20">10～20</label>
+        <input type="checkbox" name="age" id="20～30">
+        <label for="20～30">20～30</label>
+        <input type="checkbox" name="age" id="30～40">
+        <label for="30～40">30～40</label>
+        <input type="checkbox" name="age" id="50～60">
+        <label for="50～60">50～60</label><br> <br>
+
+        <label for="">4.平常是否有喝飲料的習慣：（選有的話請繼續填寫第5題）</label>
+        <input type="radio" name="choese" id="yes">
+        <label for="yes">有</label>
+        <input type="radio" name="choese" id="no">
+        <label for="no">沒有</label><br> <br>
+
+        <label for="userName">5.最常點哪一種飲料：</label>
+        <input type="text" name="drink" id="drink">
+        <a target="_blank" href="https://www.dcard.tw/f/food/p/228996343/"> 參考選擇 </a><br> <br>
+
+
+        <label for="">●甜度：</label>
+        <input type="radio" name="sugar" id="無糖">
+        <label for="無糖">無糖</label>
+        <input type="radio" name="sugar" id="微糖">
+        <label for="微糖">微糖</label>
+        <input type="radio" name="sugar" id="半糖">
+        <label for="半糖">半糖</label>
+        <input type="radio" name="sugar" id="少糖">
+        <label for="少糖">少糖</label>
+        <input type="radio" name="sugar" id="全糖">
+        <label for="全糖">全糖</label>
+        <br> <br>
+
+        <label for="">●冰量：</label>
+        <input type="radio" name="ice" id="完全去冰">
+        <label for="完全去冰">完全去冰</label>
+        <input type="radio" name="ice" id="去冰">
+        <label for="去冰">去冰</label>
+        <input type="radio" name="ice" id="微冰">
+        <label for="微冰">微冰</label>
+        <input type="radio" name="ice" id="少冰">
+        <label for="少冰">少冰</label>
+        <input type="radio" name="ice" id="正常冰">
+        <label for="正常冰">正常冰</label>
+        <br><br>
+
+        <label for="userName">6.最後麻煩留下您的E-mail及電話，有任何相關資訊將會寄送給您:</label> <br>
+        email:<input type="email" name="email" id="email"> <br>
+        電話：<input type="tel" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">(09xx-xxx-xxx)
+
+        <br><br> <br>
+        <strong><span style="color:saddlebrown">以上是所有問卷的內容，非常感謝您的協助~</span></strong> <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+
+    </form>
+
+</body>
+
+</html>
